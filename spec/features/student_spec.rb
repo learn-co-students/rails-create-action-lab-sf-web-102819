@@ -26,8 +26,8 @@ describe 'form page' do
   it 'new form submits content and renders form content' do
     visit new_student_path
 
-    fill_in 'first_name', with: "Margaery"
-    fill_in 'last_name', with: "Tyrell"
+    fill_in 'student_first_name', with: "Margaery"
+    fill_in 'student_last_name', with: "Tyrell"
 
     click_on "Submit Student"
 
@@ -37,8 +37,8 @@ describe 'form page' do
   it 'creates a record in the database' do
     visit new_student_path
 
-    fill_in 'first_name', with: "Sansa"
-    fill_in 'last_name', with: "Stark"
+    fill_in 'student_first_name', with: "Sansa"
+    fill_in 'student_last_name', with: "Stark"
 
     click_on "Submit Student"
 
